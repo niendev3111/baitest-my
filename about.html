@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu - Lê Đình Quang</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Hero Section Styles */
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            color: white;
+            padding: 80px 0;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80') center/cover;
+            opacity: 0.1;
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .profile-image {
+            border: 4px solid white;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 50px;
+        }
+        .wave-divider .shape-fill {
+            fill: #FFFFFF;
+        }
+        
+        /* Timeline Styles */
+        .timeline {
+            position: relative;
+            padding: 40px 0;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            width: 2px;
+            background: #e9ecef;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -1px;
+        }
+        .timeline-item {
+            margin-bottom: 40px;
+            position: relative;
+        }
+        .timeline-content {
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            position: relative;
+            width: calc(50% - 30px);
+        }
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: auto;
+        }
+        .timeline-content::before {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #2563eb;
+            border-radius: 50%;
+            top: 20px;
+        }
+        .timeline-item:nth-child(odd) .timeline-content::before {
+            left: -40px;
+        }
+        .timeline-item:nth-child(even) .timeline-content::before {
+            right: -40px;
+        }
+
+        /* Partner Section Styles */
+        .partner-section {
+            background: #f8fafc;
+            padding: 60px 0;
+        }
+        .partner-logo {
+            filter: grayscale(100%);
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        /* Contact Form Styles */
+        .contact-form {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 30px;
+        }
+        .form-control {
+            border: 2px solid #e9ecef;
+            padding: 12px;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            border-color: #2563eb;
+            box-shadow: 0 0 0 0.2rem rgba(37,99,235,0.25);
+        }
+        .btn-primary {
+            padding: 12px 30px;
+            border-radius: 30px;
+            background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+            border: none;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(37,99,235,0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header (unified with homepage) -->
+    <header class="bg-gradient-primary text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-md-start text-center mb-2 mb-md-0">
+                    <h1 class="mb-0 fw-light" style="font-size:2rem;letter-spacing:1px;opacity:0.95;">Blog Marketing</h1>
+                    <p class="mb-0 small" style="opacity:0.7;font-size:0.9rem;">Chia sẻ kiến thức & kinh nghiệm</p>
+                </div>
+                <div class="col-md-4 mb-2 mb-md-0 d-flex justify-content-center">
+                    <form class="search-box w-100 position-relative" onsubmit="return false;">
+                        <input type="text" class="form-control rounded-pill px-4" placeholder="Tìm kiếm..." style="height:44px;padding-right:50px;">
+                        <button type="button" class="btn btn-light position-absolute rounded-circle" style="top:50%;right:8px;transform:translateY(-50%);width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fas fa-search" style="font-size:14px;"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Bài viết</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="about.html">Giới thiệu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center hero-content">
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Lê Đình Quang</h1>
+                    <h5 class="mb-4">Chuyên gia Marketing & Đào tạo kỹ năng Digital cho doanh nghiệp SMEs</h5>
+                    <p class="lead mb-4">Hơn 10 năm kinh nghiệm trong lĩnh vực đào tạo và marketing doanh nghiệp</p>
+                    <a href="#contactForm" class="btn btn-light btn-lg rounded-pill px-4">Liên hệ ngay</a>
+                </div>
+                <div class="col-md-6 text-center" data-aos="fade-left">
+                    <img src="https://ledinhquang.com/assets/images/avt-call.png" 
+                         alt="Chuyên gia Lê Đình Quang" 
+                         class="img-fluid rounded-circle profile-image"
+                         style="max-width: 300px;">
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- About Content -->
+            <div class="col-md-8">
+                <!-- Quote Section -->
+                <div class="card mb-5" data-aos="fade-up">
+                    <div class="card-body p-5">
+                        <blockquote class="blockquote text-center mb-0">
+                            <i class="fas fa-quote-left fa-2x text-primary mb-3"></i>
+                            <p class="lead mb-3">"Thành công là một hành trình, chứ không phải điểm đến. Lựa chọn quan trọng hơn nỗ lực."</p>
+                            <footer class="blockquote-footer">Lê Đình Quang</footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+                <!-- Timeline Section -->
+                <div class="timeline mb-5">
+                    <h2 class="text-center mb-4" data-aos="fade-up">Quá trình phát triển</h2>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <h4>Khởi đầu</h4>
+                            <p>Bắt đầu từ một nhân viên kỹ thuật, với niềm đam mê Marketing và tinh thần học hỏi không ngừng.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <h4>Phát triển</h4>
+                            <p>Từ vị trí cộng tác viên, trở thành trưởng nhóm, trưởng phòng, giám đốc chi nhánh.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-content">
+                            <h4>Hiện tại</h4>
+                            <p>Chuyên gia đào tạo nghề Marketing tại AZ Media, với hơn 10 năm kinh nghiệm.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Section -->
+                <div class="card mb-5" data-aos="fade-up">
+                    <div class="card-body p-4">
+                        <h2 class="mb-4">Thế mạnh nghề nghiệp</h2>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Đào tạo chuyên sâu</h5>
+                                        <p class="mb-0">Phương pháp dễ hiểu, truyền cảm hứng</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Kinh nghiệm thực chiến</h5>
+                                        <p class="mb-0">Tư duy đổi mới, dẫn dắt doanh nghiệp</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Kỹ năng giao tiếp</h5>
+                                        <p class="mb-0">Xây dựng mối quan hệ bền vững</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="d-flex align-items-center mb-3">
+                                    <i class="fas fa-check-circle text-success fa-2x me-3"></i>
+                                    <div>
+                                        <h5 class="mb-1">Chuyên môn đa dạng</h5>
+                                        <p class="mb-0">SEO, Facebook Ads, Google Ads, Content</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Partners Section (carousel like homepage) -->
+                <div class="partner-section mb-5" data-aos="fade-up">
+                    <h2 class="text-center mb-4">Đối tác tiêu biểu</h2>
+                    <!-- Logo Carousel -->
+                    <div class="partner-carousel-container">
+                        <div class="partner-carousel">
+                            <div class="partner-carousel-track">
+                                <!-- First set of logos -->
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac2-510x287.jpg" alt="Partner 2" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac3-510x287.jpg" alt="Partner 3" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac4-510x287.jpg" alt="Partner 4" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac6-510x287.jpg" alt="Partner 6" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac7-510x287.jpg" alt="Partner 7" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac8-510x287.jpg" alt="Partner 8" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac9-510x287.jpg" alt="Partner 9" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/fptedu.png" alt="FPT Edu" class="img-fluid partner-logo">
+                                </div>
+                                
+                                <!-- Duplicate set for seamless loop -->
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac2-510x287.jpg" alt="Partner 2" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac3-510x287.jpg" alt="Partner 3" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac4-510x287.jpg" alt="Partner 4" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac6-510x287.jpg" alt="Partner 6" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac7-510x287.jpg" alt="Partner 7" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac8-510x287.jpg" alt="Partner 8" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac9-510x287.jpg" alt="Partner 9" class="img-fluid partner-logo">
+                                </div>
+                                <div class="partner-logo-item">
+                                    <img src="https://ledinhquang.com/wp-content/uploads/2025/06/fptedu.png" alt="FPT Edu" class="img-fluid partner-logo">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="col-md-4">
+                <!-- Contact Form -->
+                <div class="contact-form mb-4" data-aos="fade-left" id="contactForm">
+                    <h4 class="mb-4">Liên hệ với tôi</h4>
+                    <form>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Họ tên</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Nội dung</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Gửi tin nhắn</button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="card mb-4" data-aos="fade-left">
+                    <div class="card-body">
+                        <h5 class="mb-3">Thông tin liên hệ</h5>
+                        <ul class="list-unstyled mb-0">
+                            <li class="mb-3">
+                                <i class="fas fa-map-marker-alt text-primary me-2"></i>
+                                84 Nguyễn Hữu Dật, Hòa Cường Bắc, Hải Châu, Đà Nẵng
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-phone-alt text-success me-2"></i>
+                                0968 825 068 (Mr. Quang – CEO)
+                            </li>
+                            <li class="mb-3">
+                                <i class="fas fa-envelope text-danger me-2"></i>
+                                azmedia.com.vn@gmail.com
+                            </li>
+                            <li>
+                                <i class="fab fa-facebook text-primary me-2"></i>
+                                <a href="https://www.facebook.com/quangmarketingonlinedn/photos?locale=vi_VN" target="_blank">Lê Đình Quang</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Recent Posts -->
+                <div class="card" data-aos="fade-left">
+                    <div class="card-header">
+                        <h5 class="mb-0">Bài viết gần đây</h5>
+                    </div>
+                    <div class="card-body">
+                        <ul class="list-unstyled">
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none d-flex align-items-center">
+                                    <img src="https://ledinhquang.com/admin/assets/uploads/tai-sao-lai-chon-azmedia.webp" alt="Post thumbnail" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-1">
+Tại Sao Bạn Nên Học MKT Online Tại AZ MEDIA</h6>
+                                        <small class="text-muted">01/01/2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="mb-3">
+                                <a href="#" class="text-decoration-none d-flex align-items-center">
+                                    <img src="https://ledinhquang.com/admin/assets/uploads/top-3-loi-ich-cua-google-adword.jpg" alt="Post thumbnail" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-1">
+TOP 3 LỢI ÍCH HÀNG ĐẦU CỦA GOOGLE ADS</h6>
+                                        <small class="text-muted">02/01/2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="text-decoration-none d-flex align-items-center">
+                                    <img src="https://ledinhquang.com/admin/assets/uploads/9-bai-hoc-tu-cac-nha-tu-van-khoi-nghiep.webp" alt="Post thumbnail" class="rounded me-3" style="width: 60px; height: 60px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-1">
+9 BÀI HỌC TỪ CÁC NHÀ TƯ VẤN KHỞI NGHIỆP</h6>
+                                        <small class="text-muted">03/01/2024</small>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact icons (unified) -->
+    <div class="contact-icons-container">
+        <a href="tel:0123456789" class="contact-icon phone-icon" title="Gọi ngay">
+            <i class="fas fa-phone"></i>
+        </a>
+        <a href="mailto:email@example.com" class="contact-icon email-icon" title="Gửi email">
+            <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://zalo.me" target="_blank" rel="noopener noreferrer" class="contact-icon messenger-icon" title="Messenger">
+            <i class="fab fa-facebook-messenger"></i>
+        </a>
+    </div>
+
+    <!-- Footer (unified with homepage) --> 
+    <footer class="footer-main text-white pt-5 pb-3 mt-5" style="background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 24px 24px 0 0; box-shadow: 0 -4px 32px rgba(37,99,235,0.10);">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+                    <h4 class="fw-bold mb-1" style="letter-spacing:1px;">Blog Marketing</h4>
+                    <div class="mb-2" style="font-size:1.08rem;opacity:0.92;">Blog chia sẻ kiến thức và trải nghiệm</div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-2" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2" title="Github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="me-2" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <h5 class="fw-bold mb-3">Liên kết nhanh</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none"><i class="fas fa-user me-2"></i>Về tôi</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none"><i class="fas fa-newspaper me-2"></i>Bài viết</a></li>
+                        <li><a href="mailto:azmedia.com.vn@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i>Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <h5 class="fw-bold mb-3">Liên hệ</h5>
+                    <div class="mb-2"><i class="fas fa-envelope me-2"></i>azmedia.com.vn@gmail.com</div>
+                    <div class="mb-2"><i class="fas fa-phone me-2"></i>+84 0968 825 068</div>
+                    <div class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>84 Nguyễn Hữu Dật, Hải Châu, Đà Nẵng</div>
+                    <div class="d-flex gap-2 justify-content-lg-end justify-content-center mt-3">
+                        <a href="tel:0968825068" class="btn btn-success btn-circle" title="Gọi ngay"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:azmedia.com.vn@gmail.com" class="btn btn-primary btn-circle" title="Gửi email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/azmedia.dn" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-circle" title="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4" style="border-color:rgba(255,255,255,0.15);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <span>© 2025 All rights reserved</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="/terms" class="text-white text-decoration-none me-3">Điều khoản sử dụng</a>
+                    <a href="/privacy" class="text-white text-decoration-none">Chính sách bảo mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+     <style>
+    .footer-main {
+        background: linear-gradient(135deg, #2563eb, #7c3aed);
+        border-radius: 24px 24px 0 0;
+        box-shadow: 0 -4px 32px rgba(37,99,235,0.10);
+        color: #fff;
+    }
+    .footer-main .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.12);
+        color: #fff;
+        font-size: 1.25rem;
+        transition: all 0.3s;
+    }
+    .footer-main .social-links a:hover {
+        background: #fff;
+        color: #2563eb;
+        transform: translateY(-3px) scale(1.1) rotate(10deg);
+    }
+    .footer-main .btn-circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        transition: transform 0.2s, background 0.2s;
+        color: #fff;
+    }
+    .footer-main .btn-circle:hover {
+        transform: scale(1.12) rotate(-8deg);
+        background: #7c3aed;
+        color: #fff;
+    }
+    @media (max-width: 991px) {
+        .footer-main .col-lg-4 {margin-bottom: 2rem;}
+    }
+    </style>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+    </script>
+</body>
+</html> 

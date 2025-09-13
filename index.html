@@ -1,0 +1,964 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Đình Quang - Blog</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+<link rel="stylesheet" href="/ledinhquang_baitest/css/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gradient-primary text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-4 text-md-start text-center mb-2 mb-md-0">
+                    <h1 class="mb-0 fw-light" style="font-size:2rem;letter-spacing:1px;opacity:0.95;">Blog Marketing</h1>
+                    <p class="mb-0 small" style="opacity:0.7;font-size:0.9rem;">Chia sẻ kiến thức & kinh nghiệm</p>
+                </div>
+                <div class="col-md-4 mb-2 mb-md-0 d-flex justify-content-center">
+                    <form class="search-box w-100 position-relative" onsubmit="return false;">
+                        <input type="text" class="form-control rounded-pill px-4" placeholder="Tìm kiếm..." style="height:44px;padding-right:50px;">
+                        <button type="button" class="btn btn-light position-absolute rounded-circle" style="top:50%;right:8px;transform:translateY(-50%);width:32px;height:32px;display:flex;align-items:center;justify-content:center;">
+                            <i class="fas fa-search" style="font-size:14px;"></i>
+                        </button>
+                    </form>
+                </div>
+                <div class="col-md-4">
+                    <nav class="navbar navbar-expand-lg navbar-dark justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ms-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="index.html">Trang chủ</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="blog.html">Bài viết</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">Giới thiệu</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Banner Chiêu sinh khóa học Marketing Online -->
+    <section class="banner-intro">
+        <img src="img/bannerr.jpg" alt="Banner" style="width:100%;display:block;object-fit:cover;">
+    </section>
+
+    <!-- Doanh nghiệp hợp tác -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="mb-4 text-center">
+                <h2 class="fw-bold text-uppercase mb-2" style="font-size:2.1rem;letter-spacing:1px;">DOANH NGHIỆP ĐÃ HỢP TÁC</h2>
+                <div style="height:6px;display:inline-flex;align-items:center;gap:0;">
+                    <span style="display:inline-block;width:70px;height:4px;background:#ff6600;border-radius:2px;"></span>
+                    <span style="display:inline-block;width:40px;height:4px;background:#222;margin-left:2px;border-radius:2px;"></span>
+                </div>
+            </div>
+            
+            <!-- Logo Carousel -->
+            <div class="partner-carousel-container">
+                <div class="partner-carousel">
+                    <div class="partner-carousel-track">
+                        <!-- First set of logos -->
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac1-510x287.jpg" alt="Partner 1" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac2-510x287.jpg" alt="Partner 2" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac3-510x287.jpg" alt="Partner 3" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac4-510x287.jpg" alt="Partner 4" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac6-510x287.jpg" alt="Partner 6" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac7-510x287.jpg" alt="Partner 7" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac8-510x287.jpg" alt="Partner 8" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac9-510x287.jpg" alt="Partner 9" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/fptedu.png" alt="FPT Edu" class="img-fluid partner-logo">
+                </div>
+                        
+                        <!-- Duplicate set for seamless loop -->
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac2-510x287.jpg" alt="Partner 2" class="img-fluid partner-logo">
+                </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac3-510x287.jpg" alt="Partner 3" class="img-fluid partner-logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac4-510x287.jpg" alt="Partner 4" class="img-fluid partner-logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac6-510x287.jpg" alt="Partner 6" class="img-fluid partner-logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac7-510x287.jpg" alt="Partner 7" class="img-fluid partner-logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac8-510x287.jpg" alt="Partner 8" class="img-fluid partner-logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/doitac9-510x287.jpg" alt="Partner 9" class="img-fluid partner-logo">
+                        </div>
+                        <div class="partner-logo-item">
+                            <img src="https://ledinhquang.com/wp-content/uploads/2025/06/fptedu.png" alt="FPT Edu" class="img-fluid partner-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Đào tạo & Huấn luyện -->
+    <section class="py-5 bg-light border-bottom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-size:2.1rem;letter-spacing:1px;">ĐÀO TẠO & HUẤN LUYỆN</h2>
+                <div class="d-flex justify-content-center align-items-center gap-2 mt-2">
+                    <span style="height:4px;width:60px;background:linear-gradient(90deg,#ff6600,#ffb347);border-radius:2px;"></span>
+                    <span style="height:4px;width:30px;background:#222;border-radius:2px;"></span>
+                </div>
+                <p class="lead mt-3 text-muted" style="max-width: 700px; margin: 0 auto;">
+                    Đào tạo và huấn luyện kỹ năng Marketing số thực chiến, giúp doanh nghiệp bứt phá tăng trưởng.
+                </p>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img src="https://azmedia.com.vn/wp-content/uploads/2021/03/khoa-hoc-1-e1615437173924.jpg" 
+                             alt="Đào tạo" 
+                             class="img-fluid rounded-4 shadow-lg" 
+                             style="width:100%; height:auto; object-fit:cover;">
+                        <div class="position-absolute top-0 start-0 w-100 h-100 rounded-4" 
+                             style="background: linear-gradient(45deg, rgba(37,99,235,0.1) 0%, rgba(99,102,241,0.1) 100%);"></div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 ps-lg-5">
+                    <div class="training-features">
+                        <div class="feature-item d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="0">
+                            <div class="feature-icon me-4">
+                                <span class="icon-circle bg-primary bg-opacity-10">
+                                    <i class="fas fa-user-graduate text-primary"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Lộ trình học cá nhân hóa</h4>
+                                <p class="text-muted mb-0">Thiết kế lộ trình học tập phù hợp với trình độ và mục tiêu của từng học viên.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="100">
+                            <div class="feature-icon me-4">
+                                <span class="icon-circle bg-success bg-opacity-10">
+                                    <i class="fas fa-project-diagram text-success"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Hỗ trợ thực chiến dự án</h4>
+                                <p class="text-muted mb-0">Được thực hành trên các dự án thực tế, có mentor hướng dẫn chi tiết từng bước.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item d-flex align-items-start mb-4" data-aos="fade-up" data-aos-delay="200">
+                            <div class="feature-icon me-4">
+                                <span class="icon-circle bg-info bg-opacity-10">
+                                    <i class="fas fa-users text-info"></i>
+                                </span>
+                            </div>
+                            <div>
+                                <h4 class="mb-2">Kèm cặp 1-1 tận tâm</h4>
+                                <p class="text-muted mb-0">Được mentor theo sát, giải đáp thắc mắc và hỗ trợ kịp thời trong quá trình học.</p>
+                            </div>
+                        </div>
+
+                        <div class="text-start mt-4" data-aos="fade-up" data-aos-delay="300">
+                            <a href="#dichvu-huanluyen" class="btn btn-primary btn-lg rounded-pill">
+                                Tìm hiểu thêm
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <style>
+    .icon-circle {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.25rem;
+        transition: all 0.3s ease;
+    }
+
+    .feature-item {
+        transition: all 0.3s ease;
+    }
+
+    .feature-item:hover .icon-circle {
+        transform: scale(1.1);
+    }
+
+    .feature-item:hover {
+        transform: translateX(10px);
+    }
+
+    @media (max-width: 768px) {
+        .feature-item:hover {
+            transform: none;
+        }
+    }
+    </style>
+
+    <!-- TẠI SAO LẠI CHỌN TÔI? -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold" style="font-size:2.1rem;letter-spacing:1px;">TẠI SAO LẠI CHỌN TÔI?</h2>
+                <div class="d-flex justify-content-center align-items-center gap-2 mt-2">
+                    <span style="height:4px;width:60px;background:linear-gradient(90deg,#ff6600,#ffb347);border-radius:2px;"></span>
+                    <span style="height:4px;width:30px;background:#222;border-radius:2px;"></span>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Hiểu biết sâu sắc -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="0">
+                    <div class="card h-100 border-0 shadow-sm hover-up-2">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <span class="icon-circle bg-primary bg-opacity-10">
+                                    <i class="fas fa-brain text-primary"></i>
+                                </span>
+                            </div>
+                            <h4 class="card-title mb-3">Hiểu biết sâu sắc</h4>
+                            <p class="card-text">Với kinh nghiệm nhiều năm trong lĩnh vực Marketing Online, tôi có khả năng phân tích và nắm bắt chính xác nhu cầu của khách hàng, từ đó đưa ra giải pháp phù hợp nhất.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tích hợp đa kênh -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm hover-up-2">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <span class="icon-circle bg-success bg-opacity-10">
+                                    <i class="fas fa-network-wired text-success"></i>
+                                </span>
+                            </div>
+                            <h4 class="card-title mb-3">Tích hợp đa kênh</h4>
+                            <p class="card-text">Tối ưu hóa chiến lược marketing bằng cách kết hợp nhiều kênh: Facebook, Google, TikTok, Zalo... tạo nên hệ sinh thái marketing toàn diện.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Thiết kế khóa học phù hợp -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm hover-up-2">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <span class="icon-circle bg-info bg-opacity-10">
+                                    <i class="fas fa-graduation-cap text-info"></i>
+                                </span>
+                            </div>
+                            <h4 class="card-title mb-3">Thiết kế khóa học phù hợp</h4>
+                            <p class="card-text">Mỗi khóa học được thiết kế riêng biệt, phù hợp với từng đối tượng học viên, đảm bảo tính thực tiễn và hiệu quả cao nhất.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Áp dụng thực chiến -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm hover-up-2">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <span class="icon-circle bg-warning bg-opacity-10">
+                                    <i class="fas fa-rocket text-warning"></i>
+                                </span>
+                            </div>
+                            <h4 class="card-title mb-3">Áp dụng thực chiến</h4>
+                            <p class="card-text">Học viên được thực hành trực tiếp trên các dự án thực tế, giúp tích lũy kinh nghiệm và tự tin trong công việc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tối ưu hóa hiệu suất -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm hover-up-2">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <span class="icon-circle bg-danger bg-opacity-10">
+                                    <i class="fas fa-chart-line text-danger"></i>
+                                </span>
+                            </div>
+                            <h4 class="card-title mb-3">Tối ưu hóa hiệu suất</h4>
+                            <p class="card-text">Liên tục cập nhật và áp dụng các công cụ, phương pháp mới nhất để tối ưu hiệu suất học tập và làm việc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cơ hội làm việc cùng AZ Media -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm hover-up-2">
+                        <div class="card-body p-4">
+                            <div class="feature-icon mb-3">
+                                <span class="icon-circle bg-primary bg-opacity-10">
+                                    <i class="fas fa-handshake text-primary"></i>
+                                </span>
+                            </div>
+                            <h4 class="card-title mb-3">Cơ hội làm việc cùng AZ Media</h4>
+                            <p class="card-text">Học viên xuất sắc sẽ có cơ hội được làm việc trực tiếp tại AZ Media - một trong những công ty Marketing hàng đầu.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Đào tạo huấn luyện (dịch vụ) -->
+    <section id="dichvu-huanluyen" class="py-5 bg-white border-bottom">
+        <div class="intro-text-container">
+        <div class="container">
+            <div class="text-center mb-4" style="max-width:700px;margin:0 auto;">
+                    <h4 class="mb-0 intro-text">Dưới đây là các lĩnh vực tôi chuyên hỗ trợ cho cá nhân và doanh nghiệp đào tạo huấn luyện từ chiến lược đến thực thi.</h4>
+                <span class="d-inline-block" style="height:4px;width:60px;background:linear-gradient(90deg,#ff6600,#ffb347);border-radius:2px;margin-bottom:8px;"></span>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 hover-up" data-aos="fade-up" data-aos-delay="0">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-facebook-square fa-2x text-primary me-3"></i>
+                            <h4 class="mb-0 fw-bold">Facebook thực chiến</h4>
+                        </div>
+                        <p>Đào tạo sử dụng Facebook Ads hiệu quả, từ cơ bản đến nâng cao, giúp tối ưu hóa chiến dịch quảng cáo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 hover-up" data-aos="fade-up" data-aos-delay="100">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-google fa-2x text-danger me-3"></i>
+                            <h4 class="mb-0 fw-bold">Quảng cáo Google Ads</h4>
+                        </div>
+                        <p>Hướng dẫn triển khai và quản lý Google Ads, tập trung vào tối ưu từ khóa và ngân sách quảng cáo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 hover-up" data-aos="fade-up" data-aos-delay="200">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-tiktok fa-2x text-dark me-3"></i>
+                            <h4 class="mb-0 fw-bold">Tiktok Shop tổng thể</h4>
+                        </div>
+                        <p>Chiến lược quảng cáo TikTok, tập trung vào tạo nội dung chất lượng thu hút và tối ưu hóa chiến dịch.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 hover-up" data-aos="fade-up" data-aos-delay="300">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-youtube fa-2x text-danger me-3"></i>
+                            <h4 class="mb-0 fw-bold">Quảng cáo Youtube</h4>
+                        </div>
+                        <p>Đào tạo quảng cáo YouTube, từ tạo video đến tối ưu hóa chiến dịch quảng cáo video hiệu quả.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 hover-up" data-aos="fade-up" data-aos-delay="400">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fab fa-facebook-messenger fa-2x text-info me-3"></i>
+                            <h4 class="mb-0 fw-bold">Zalo Business</h4>
+                        </div>
+                        <p>Hướng dẫn khai thác Zalo Business, từ tạo Official Account đến triển khai quảng cáo Zalo.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm border-0 p-4 hover-up" data-aos="fade-up" data-aos-delay="500">
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-globe fa-2x text-success me-3"></i>
+                            <h4 class="mb-0 fw-bold">Quản lý Website</h4>
+                        </div>
+                        <p>Thiết kế và phát triển website chuyên nghiệp, tối ưu SEO và quản lý nội dung hiệu quả.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+    .hover-up {
+        transition: transform .25s cubic-bezier(.4,0,.2,1),box-shadow .25s, border-bottom .25s;
+        background: #fff;
+        border-radius: 18px;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        border-bottom: 4px solid transparent;
+        animation: fadeInUp 0.7s cubic-bezier(.4,0,.2,1);
+    }
+    .hover-up:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.10);
+        z-index:2;
+    }
+    /* Gradient border for each card by order */
+    .hover-up:nth-child(1) { border-bottom: 4px solid #1877f2; }
+    .hover-up:nth-child(2) { border-bottom: 4px solid #ea4335; }
+    .hover-up:nth-child(3) { border-bottom: 4px solid #010101; }
+    .hover-up:nth-child(4) { border-bottom: 4px solid #ff0000; }
+    .hover-up:nth-child(5) { border-bottom: 4px solid #0084ff; }
+    .hover-up:nth-child(6) { border-bottom: 4px solid #10b981; }
+    .hover-up:hover { background: linear-gradient(120deg, #f8fafc 80%, #e0e7ff 100%); }
+    /* Icon color for each card */
+    .hover-up .fa-facebook-square { color: #1877f2 !important; }
+    .hover-up .fa-google { color: #ea4335 !important; }
+    .hover-up .fa-tiktok { color: #010101 !important; }
+    .hover-up .fa-youtube { color: #ff0000 !important; }
+    .hover-up .fa-facebook-messenger { color: #0084ff !important; }
+    .hover-up .fa-globe { color: #10b981 !important; }
+    /* Animation */
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(40px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    </style>
+
+
+ <!-- ĐỘI NGŨ -->
+ <section class="py-5 bg-light border-bottom">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold mb-3" style="font-size:2.5rem;letter-spacing:1px;background:linear-gradient(135deg,#667eea,#764ba2);-webkit-text-fill-color:transparent;">ĐỘI NGŨ CHUYÊN GIA</h2>
+            <p class="lead text-muted mb-4">Những chuyên gia hàng đầu trong lĩnh vực Marketing Online</p>
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <span class="d-inline-block" style="height:4px;width:60px;background:linear-gradient(90deg,#667eea,#764ba2);border-radius:2px;"></span>
+                <i class="fas fa-star text-warning"></i>
+                <span class="d-inline-block" style="height:4px;width:60px;background:linear-gradient(90deg,#764ba2,#667eea);border-radius:2px;"></span>
+        </div>
+            </div>
+        
+        <div class="row g-4 justify-content-center">
+            <!-- Team Member 1 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face" alt="Chuyên gia Marketing" class="img-fluid">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Nguyễn Văn hùng</h4>
+                        <p class="team-position">Chuyên gia Marketing Online</p>
+                        <p class="team-description">8+ năm kinh nghiệm trong lĩnh vực Digital Marketing, chuyên về SEO và Google Ads</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">SEO</span>
+                            <span class="skill-tag">Google Ads</span>
+                            <span class="skill-tag">Facebook Ads</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face" alt="Chuyên gia Content" class="img-fluid">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Trần Thị lý</h4>
+                        <p class="team-position">Chuyên gia Content Marketing</p>
+                        <p class="team-description">6+ năm kinh nghiệm sáng tạo nội dung, chuyên về Content Strategy và Social Media</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Content</span>
+                            <span class="skill-tag">Social Media</span>
+                            <span class="skill-tag">Copywriting</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="team-card">
+                    <div class="team-avatar">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&h=300&fit=crop&crop=face" alt="Chuyên gia Analytics" class="img-fluid">
+                        <div class="team-overlay">
+                            <div class="team-social">
+                                <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-info">
+                        <h4 class="team-name">Lê Văn tú</h4>
+                        <p class="team-position">Chuyên gia Analytics</p>
+                        <p class="team-description">5+ năm kinh nghiệm phân tích dữ liệu và tối ưu hóa chiến dịch marketing</p>
+                        <div class="team-skills">
+                            <span class="skill-tag">Analytics</span>
+                            <span class="skill-tag">Data Science</span>
+                            <span class="skill-tag">ROI Optimization</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Team Stats -->
+        <div class="row g-4 mt-5">
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="400">
+                <div class="team-stat">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Dự án thành công</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="500">
+                <div class="team-stat">
+                    <div class="stat-number">1000+</div>
+                    <div class="stat-label">Khách hàng hài lòng</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="600">
+                <div class="team-stat">
+                    <div class="stat-number">5+</div>
+                    <div class="stat-label">Năm kinh nghiệm</div>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 text-center" data-aos="fade-up" data-aos-delay="700">
+                <div class="team-stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Hỗ trợ khách hàng</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Khách hàng nghĩ gì về tôi -->
+    <section class="py-5 bg-white border-bottom">
+        <div class="container">
+            <h3 class="fw-bold text-center mb-5">Khách hàng nghĩ gì về tôi</h3>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 animate__animated animate__fadeInUp">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ledinhquang.com/wp-content/uploads/2025/06/test1-100x100.png" alt="avatar" class="rounded-circle me-3" style="width:56px;height:56px;object-fit:cover;">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Mr. Nam Trần</h6>
+                                    <small class="text-muted">Khách hàng thiết kế website</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Quang là người hướng dẫn rất tận tâm, giúp tôi và đội ngũ phát triển kỹ năng lập trình thực chiến."</p>
+                            <div class="mt-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star-half-alt text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 animate__animated animate__fadeInUp animate__delay-1s">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ledinhquang.com/wp-content/uploads/2025/06/test2-100x100.png" alt="avatar" class="rounded-circle me-3" style="width:56px;height:56px;object-fit:cover;">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Ms. Nguyễn Thị Mai</h6>
+                                    <small class="text-muted">Marketing Manager</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Các bạn tư vấn nhiệt tình . Lộ trình thực hiện khoa học. ĐÁp ứng đầy đủ yêu cầu bên mình."</p>
+                            <div class="mt-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow-sm h-100 animate__animated animate__fadeInUp animate__delay-2s">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="https://ledinhquang.com/wp-content/uploads/2025/06/test6-100x100.png" alt="avatar" class="rounded-circle me-3" style="width:56px;height:56px;object-fit:cover;">
+                                <div>
+                                    <h6 class="mb-0 fw-bold">Ms. Thảo Phương</h6>
+                                    <small class="text-muted">Giám đốc Marketing</small>
+                                </div>
+                            </div>
+                            <p class="mb-0">"Thái đồ làm việc cầu thị. các bạn tận tâm với khách hàng. Bên công ty mình sẽ tiếp tục hợp tác với AZMEDIA."</p>
+                            <div class="mt-3">
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                                <i class="fas fa-star text-warning"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ - Câu hỏi thường gặp -->
+    <section class="py-5 bg-light border-bottom">
+        <div class="container">
+            <h3 class="fw-bold text-center mb-5">Câu hỏi thường gặp</h3>
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                    <i class="fas fa-question-circle text-primary me-2 animate__animated animate__tada animate__infinite"></i> Chương trình training của bạn bao gồm những gì??
+                                </button>
+                            </h2>
+                            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Chúng tôi cung cấp các khóa học về chiến lược social media, quản lý tài khoản, tối ưu hóa quảng cáo, phân tích dữ liệu và nhiều chủ đề khác để giúp bạn nắm vững các kỹ năng cần thiết.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                    <i class="fas fa-question-circle text-primary me-2 animate__animated animate__tada animate__infinite"></i> Tôi sẽ học được gì từ khóa học này?
+                                </button>
+                            </h2>
+                            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Khóa học của chúng tôi giúp bạn hiểu rõ các xu hướng mới nhất trong social media, tối ưu hóa chiến dịch quảng cáo, và cải thiện khả năng tạo nội dung hấp dẫn để tăng tương tác và hiệu quả.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                    <i class="fas fa-question-circle text-primary me-2 animate__animated animate__tada animate__infinite"></i> Khóa học có phù hợp với người mới bắt đầu không?
+                                </button>
+                            </h2>
+                            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Có, chúng tôi cung cấp các khóa học từ cơ bản đến nâng cao, phù hợp với mọi cấp độ, bao gồm cả những người mới bắt đầu và những người muốn nâng cao kỹ năng hiện có.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faq4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                    <i class="fas fa-question-circle text-primary me-2 animate__animated animate__tada animate__infinite"></i> Khóa học có phù hợp với người mới bắt đầu không?
+                                </button>
+                            </h2>
+                            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Có, chúng tôi cung cấp các khóa học từ cơ bản đến nâng cao, phù hợp với mọi cấp độ, bao gồm cả những người mới bắt đầu và những người muốn nâng cao kỹ năng hiện có.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <img src="https://azmedia.edu.vn/wp-content/uploads/2024/05/bds.png" alt="FAQ minh họa" class="img-fluid rounded-4 shadow" style="max-width:350px;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="container my-5">
+        <!-- Featured Posts -->
+        <section id="featured" class="mb-5">
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Bài viết nổi bật</h2>
+                <a href="blog.html" class="btn btn-outline-primary">Xem tất cả</a>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="https://ledinhquang.com/admin/assets/uploads/tai-sao-lai-chon-azmedia.webp" class="card-img-top" alt="MKT Online">
+                            <span class="badge bg-primary position-absolute top-0 start-0 m-2" style="z-index:2;"></span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <small class="text-muted"><i class="far fa-calendar-alt"></i> 03/12/2024</small>
+                                <small class="text-muted ms-2"><i class="far fa-eye"></i> 1.2k lượt xem</small>
+                            </div>
+                            <h5 class="card-title">Tại Sao Bạn Nên Học MKT Online Tại AZ MEDIA</h5>
+                            <p class="card-text">AZ MEDIA ĐÀ NẴNG có gì? AZ MEDIA ra đời mang theo sứ mệnh và nhiệm vụ mang lại cho các bạn môi trường...</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <a href="posts/tai-sao-ban-nen-hoc-mkt-online-tai-az-media.html" class="btn btn-primary">
+                                    Đọc thêm
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                                <div class="share-buttons">
+                                    <a href="#" class="text-primary me-2" onclick="shareOnFacebook('tai-sao-ban-nen-hoc-mkt-online-tai-az-media')">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="text-info" onclick="shareOnTwitter('tai-sao-ban-nen-hoc-mkt-online-tai-az-media')">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="https://ledinhquang.com/admin/assets/uploads/top-3-loi-ich-cua-google-adword.jpg" class="card-img-top" alt="Google Ads">
+                            <span class="badge bg-success position-absolute top-0 start-0 m-2" style="z-index:2;"></span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <small class="text-muted"><i class="far fa-calendar-alt"></i> 21/08/2024</small>
+                                <small class="text-muted ms-2"><i class="far fa-eye"></i> 2.3k lượt xem</small>
+                            </div>
+                            <h5 class="card-title">TOP 3 LỢI ÍCH HÀNG ĐẦU CỦA GOOGLE ADS</h5>
+                            <p class="card-text">Hiện nay, các doanh nghiệp đang dần chuyển sang sử dụng Google ads để thu hút khách hàng mới qua các...</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <a href="posts/top-3-loi-ich-hang-dau-cua-google-ads.html" class="btn btn-primary">
+                                    Đọc thêm
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                                <div class="share-buttons">
+                                    <a href="#" class="text-primary me-2" onclick="shareOnFacebook('top-3-loi-ich-hang-dau-cua-google-ads')">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="text-info" onclick="shareOnTwitter('top-3-loi-ich-hang-dau-cua-google-ads')">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="https://ledinhquang.com/admin/assets/uploads/9-bai-hoc-tu-cac-nha-tu-van-khoi-nghiep.webp" class="card-img-top" alt="Tư vấn khởi nghiệp">
+                            <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-2" style="z-index:2;"></span>
+                        </div>
+                        <div class="card-body d-flex flex-column">
+                            <div class="mb-2">
+                                <small class="text-muted"><i class="far fa-calendar-alt"></i> 03/08/2024</small>
+                                <small class="text-muted ms-2"><i class="far fa-eye"></i> 6.5k lượt xem</small>
+                            </div>
+                            <h5 class="card-title">9 BÀI HỌC TỪ CÁC NHÀ TƯ VẤN KHỞI NGHIỆP</h5>
+                            <p class="card-text">Dịch vụ tư vấn khởi nghiệp cung cấp cho doanh nghiệp của bạn những kiến thức cụ thể và hữu ích, hỗ...</p>
+                            <div class="d-flex justify-content-between align-items-center mt-auto">
+                                <a href="posts/9-bai-hoc-tu-cac-nha-tu-van-khoi-nghiep.html" class="btn btn-primary">
+                                    Đọc thêm
+                                    <i class="fas fa-arrow-right ms-2"></i>
+                                </a>
+                                <div class="share-buttons">
+                                    <a href="#" class="text-primary me-2" onclick="shareOnFacebook('9-bai-hoc-tu-cac-nha-tu-van-khoi-nghiep')">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="text-info" onclick="shareOnTwitter('9-bai-hoc-tu-cac-nha-tu-van-khoi-nghiep')">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Google Map & Icon động -->
+    <section class="pt-5 pb-2 bg-white border-bottom p-0" style="overflow-x:hidden;">
+        <h3 class="fw-bold text-center mb-4">Địa chỉ & Liên hệ</h3>
+        <div id="map-animate" class="w-100" style="opacity:0;transform:translateY(40px);transition:all 0.8s cubic-bezier(.4,0,.2,1);">
+            <div style="width:100vw;max-width:100vw;margin-left:calc(-50vw + 50%);">
+                <div class="ratio" style="overflow:hidden;aspect-ratio:16/9;min-height:220px;max-height:400px;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3834.45487180522!2d108.21080177490356!3d16.04186848463365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x314219bff0850103%3A0x618ec177a3f84b46!2zODQgTmd1eeG7hW4gSOG7r3UgROG6rXQsIEhvw6AgQ8aw4budbmcgQuG6r2MsIEjhuqNpIENow6J1LCDEkMOgIE7hurVuZyA1NTAwMDAsIFZp4buHdCBOYW0!5e0!3m2!1svi!2s!4v1747735515881!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="100%" height="380" style="border:0;min-height:220px;max-height:400px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allow="geolocation *; fullscreen *; accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
+                </div>
+            </div>
+        </div>
+        <!-- Icon liên hệ động -->
+        <div class="contact-icons-container">
+            <a href="tel:0123456789" class="contact-icon phone-icon" title="Gọi ngay">
+                <i class="fas fa-phone"></i>
+            </a>
+            <a href="mailto:email@example.com" class="contact-icon email-icon" title="Gửi email">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://zalo.me" target="_blank" rel="noopener noreferrer" class="contact-icon messenger-icon" title="Messenger">
+                <i class="fab fa-facebook-messenger"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-main text-white pt-5 pb-3 mt-5" style="background: linear-gradient(135deg, #2563eb, #7c3aed); border-radius: 24px 24px 0 0; box-shadow: 0 -4px 32px rgba(37,99,235,0.10);">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center text-lg-start">
+                    <h4 class="fw-bold mb-1" style="letter-spacing:1px;">Blog Marketing</h4>
+                    <div class="mb-2" style="font-size:1.08rem;opacity:0.92;">Blog chia sẻ kiến thức và trải nghiệm</div>
+                    <div class="social-links mt-3">
+                        <a href="#" class="me-2" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-2" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="me-2" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="me-2" title="Github"><i class="fab fa-github"></i></a>
+                        <a href="#" class="me-2" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-4 mb-4 mb-lg-0 text-center">
+                    <h5 class="fw-bold mb-3">Liên kết nhanh</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white text-decoration-none"><i class="fas fa-user me-2"></i>Về tôi</a></li>
+                        <li class="mb-2"><a href="blog.html" class="text-white text-decoration-none"><i class="fas fa-newspaper me-2"></i>Bài viết</a></li>
+                        <li><a href="mailto:azmedia.com.vn@gmail.com" class="text-white text-decoration-none"><i class="fas fa-envelope me-2"></i>Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <h5 class="fw-bold mb-3">Liên hệ</h5>
+                    <div class="mb-2"><i class="fas fa-envelope me-2"></i>azmedia.com.vn@gmail.com</div>
+                    <div class="mb-2"><i class="fas fa-phone me-2"></i>+84 0968 825 068</div>
+                    <div class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>84 Nguyễn Hữu Dật, Hải Châu, Đà Nẵng</div>
+                    <div class="d-flex gap-2 justify-content-lg-end justify-content-center mt-3">
+                        <a href="tel:0968825068" class="btn btn-success btn-circle" title="Gọi ngay"><i class="fas fa-phone"></i></a>
+                        <a href="mailto:azmedia.com.vn@gmail.com" class="btn btn-primary btn-circle" title="Gửi email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.facebook.com/azmedia.dn" target="_blank" rel="noopener noreferrer" class="btn btn-info btn-circle" title="Messenger"><i class="fab fa-facebook-messenger"></i></a>
+                    </div>
+                    
+                </div>
+            </div>
+            <hr class="my-4" style="border-color:rgba(255,255,255,0.15);">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+                    <span>© 2025 All rights reserved</span>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="/terms" class="text-white text-decoration-none me-3">Điều khoản sử dụng</a>
+                    <a href="/privacy" class="text-white text-decoration-none">Chính sách bảo mật</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    <script>
+    // Hiệu ứng fade-in khi cuộn tới bản đồ
+    const mapSection = document.getElementById('map-animate');
+    if(mapSection) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if(entry.isIntersecting) {
+                    mapSection.style.opacity = 1;
+                    mapSection.style.transform = 'translateY(0)';
+                    observer.disconnect();
+                }
+            });
+        }, { threshold: 0.2 });
+        observer.observe(mapSection);
+    }
+    </script>
+    <style>
+    .footer-main {
+        background: linear-gradient(135deg, #2563eb, #7c3aed);
+        border-radius: 24px 24px 0 0;
+        box-shadow: 0 -4px 32px rgba(37,99,235,0.10);
+        color: #fff;
+    }
+    .footer-main .social-links a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: rgba(255,255,255,0.12);
+        color: #fff;
+        font-size: 1.25rem;
+        transition: all 0.3s;
+    }
+    .footer-main .social-links a:hover {
+        background: #fff;
+        color: #2563eb;
+        transform: translateY(-3px) scale(1.1) rotate(10deg);
+    }
+    .footer-main .btn-circle {
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        font-size: 1.2rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+        transition: transform 0.2s, background 0.2s;
+        color: #fff;
+    }
+    .footer-main .btn-circle:hover {
+        transform: scale(1.12) rotate(-8deg);
+        background: #7c3aed;
+        color: #fff;
+    }
+    @media (max-width: 991px) {
+        .footer-main .col-lg-4 {margin-bottom: 2rem;}
+    }
+    </style>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 700,
+        easing: 'ease-out-cubic',
+        once: true,
+        offset: 80
+      });
+    </script>
+</body>
+</html> 
